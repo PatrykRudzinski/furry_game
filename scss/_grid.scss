@@ -1,0 +1,36 @@
+$columns : 12;
+$gap : 10px;
+$bp : 768px;
+
+.container {
+  padding-left: $gap;
+  padding-right: $gap;
+
+  .row {
+    margin-left: -$gap;
+    margin-right: -$gap;
+
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    [class*='col-'] {
+      padding-left: $gap;
+      padding-right: $gap;
+      margin-bottom: 2*$gap;
+      box-sizing: border-box;
+    }
+
+    @media (min-width:#{$bp}) {
+      @for $i from 1 through $columns {
+        .col-#{$i}-#{$columns} {
+          float: left;
+          width: (1 / $columns * $i) * 100%;
+        }
+      }
+
+    }
+  }
+}
