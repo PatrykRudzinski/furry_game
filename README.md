@@ -1,5 +1,11 @@
-# Furry Game
+# [Furry Game](https://patrykrudzinski.github.io/furry_game/)
 
-[live](https://patrykrudzinski.github.io/furry_game/)
+## A simple game, made on CodersLab course. The poin of the game is catching coins on two-dimensional board
 
-A simple game, made on CodersLab course.
+## Tech stack:
+* Vanilla JS
+* Sass
+* Webpack
+
+
+
